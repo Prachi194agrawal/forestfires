@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction App</title>
+</head>
+<body>
+    <h1>Enter Fire Weather Data</h1>
+    <form method="POST" action="/results">
+        <label for="Temperature">Temperature:</label>
+        <input type="text" id="Temperature" name="Temperature" required>
+    
+        <label for="RH">Relative Humidity (RH):</label>
+        <input type="text" id="RH" name="RH" required>
+    
+        <label for="Ws">Wind Speed (Ws):</label>
+        <input type="text" id="Ws" name="Ws" required>
+    
+        <label for="Rain">Rain:</label>
+        <input type="text" id="Rain" name="Rain" required>
+    
+        <label for="FFMC">FFMC:</label>
+        <input type="text" id="FFMC" name="FFMC" required>
+    
+        <label for="DMC">DMC:</label>
+        <input type="text" id="DMC" name="DMC" required>
+    
+        <label for="ISI">ISI:</label>
+        <input type="text" id="ISI" name="ISI" required>
+    
+        <label for="Region">Region:</label>
+        <select id="Region" name="Region" required>
+            <option value="North">North</option>
+            <option value="South">South</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+        </select>
+    
+        <label for="Classes">Classes:</label>
+        <select id="Classes" name="Classes" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
